@@ -1,0 +1,261 @@
+body {
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://file.kreditings.com/uploads/preview/happy-birthday-viral-photo-editing-hd-background-11669387467m5jnxo4imf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: rgba(13, 103, 194, 0.421);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo   {
+    min-width: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: rgb(0, 100, 250);
+}
+
+header {
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 15px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.chat p {
+    color: white;
+    font-size: 26px;
+    font-family: lucida sans;
+}
+.chat img {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: -10px 0 10px rgb(0, 0, 0);
+}
+.carta {
+    background-image: url("img/letter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+.carta p {
+    color: rgb(0, 0, 0);
+}
+.ella {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.ella .card {
+    background-color: rgb(33, 139, 204);
+    color: white;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    transition: all 0.3s ease;
+
+    box-shadow: -3px 0 10px rgb(255, 255, 255);
+}
+.ella .card .header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ella .card:hover {
+    margin-right: 50px;
+    transform: rotate(3deg) translateY(-15px);
+    cursor: pointer;
+}
+.ella .card .header .nombre {
+    font-size: 28px;
+}
+.ella .card .footer {
+    font-style: italic;
+}
+.ella .card[class*="element"] {
+    margin-left: -100px;
+}
+.element-1:hover,
+.element-2:hover {
+    margin-left: -130px;
+}
+.card img {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: -3px 0 10px rgb(255, 255, 255);
+}
+
+.slider-container {
+    width: 700px;
+    margin: 100px auto;
+
+}
+.slider-container .slider-viewport {
+    width: 700px;
+    border-radius: 10px;
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type:  x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.slider-container .slider-viewport .slide {
+    min-width: 700px;
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    scroll-snap-align: start;
+}
+#slide1 {
+    
+    background-image: url("img/Love/1.jpg");
+    background-size: cover;
+}
+#slide2 {
+    background-image: url("img/Love/2.jpg");
+    background-size: cover;
+}
+#slide3 {
+    background-image: url("img/Love/3.jpg");
+    background-size: cover;
+}
+#slide4 {
+    background-image: url("img/Love/4.jpg");
+    background-size: cover;
+}
+#slide5 {
+    background-image: url("img/Love/5.jpg");
+    background-size: cover;
+}
+.slider-container .links {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.slider-container .links a {
+    width: 40px;
+    height: 40px;
+    background-color: #544fc0;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.slider-container .links a:hover {
+    background-color: blue;
+}
+.flashcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    position: relative;
+    gap: 15px;
+}
+.flashcard .flash {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    perspective: 1000px;
+
+    box-shadow: -3px 0 15px rgba(51, 255, 0, 0.797);
+}
+.flashcard .flash .flash_inner img {
+    width: 120px;
+    height: 100px;
+}
+.flashcard .flash:hover .flash_inner {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.flashcard .flash .flash_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.0s ease-in-out;
+    transform-style: preserve-3d;
+}
+.flashcard .flash .flash_front,
+.flashcard .flash .flash_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flashcard .flash .flash_back {
+    transform: rotateY(180deg);
+}
+.distancia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 40px;
+    font-size: 20px;
+}
+.distancia img {
+    width: 600px;
+    border-radius: 25px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer img {
+    padding: 15px 25px;
+    width: 250px;
+}
